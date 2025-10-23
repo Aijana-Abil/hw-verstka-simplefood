@@ -49,10 +49,12 @@ body{
 .container{
     margin: 0 auto;
     max-width: 1170px;
-    display: flex;
+    background: #f9faff;
+     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f9faff;
+    gap: 120px;
+    flex-wrap: wrap;
 }
 .logo_header{
     margin:60px 0 60px 0;
@@ -129,3 +131,107 @@ body{
     height: 660px;
 }
 
+/*Необходимо сверстать секцию "Популярные категории", так же соблюдайте семантику обязательно */
+ .popular_foods{
+    min-width: 1170px;
+ }
+ .popular_foods__title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    color: #363853;
+ }
+ .category_foods{
+    display: flex;
+    gap: 20px;
+    margin: 60px 0 40px 0;
+ }
+ .category_foods_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    height: 70px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #363853;
+    cursor: pointer;
+    transition: .3s;
+ }
+ .category_foods_btn:hover  {
+    background: #ff6838;
+    color: #fff;
+ }
+ .img_icon{
+    transition: .3s;
+ }
+ .category_foods_btn:hover .img_icon {
+    filter: brightness(0) invert(1);
+ }
+ .asia__foods{
+    width: 280px;
+    height: 70px;
+ }
+ .burgers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+.burgers_card{
+    padding: 20px;
+    max-width: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+}
+.name_burger{
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #31352b;
+}
+.burger_price{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    color: #363853;
+    margin: 18px;
+}
+.burger_btn{
+    width: 101px;
+    height: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+     background: #ff6838;
+     border-radius: 6px;
+}
+.burger_btn:hover{
+    background: #9d340e;
+}
+.wrapper{
+    min-width: 1170px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.popular_foods_more{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: #363853;
+}
